@@ -31,7 +31,7 @@ def main():
     if not token:
         raise ValueError("Не найден BOT_TOKEN! Установи его в переменных окружения.")
 
-    application = ApplicationBuilder().token(token).build()
+    application = ApplicationBuilder().token(token).connect_timeout(20).read_timeout(30).pool_timeout(10).build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
 
