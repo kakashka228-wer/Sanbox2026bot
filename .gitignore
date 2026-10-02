@@ -1,0 +1,35 @@
+# Байт-код
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+ENV/
+
+# Секреты и локальные настройки
+.env
+.env.*
+!.env.example
+
+# Логи
+*.log
+
+# Кэши инструментов
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Артефакты сборки
+build/
+dist/
+*.egg-info/
+
+# IDE и ОС
+.idea/
+.vscode/
+.DS_Store
